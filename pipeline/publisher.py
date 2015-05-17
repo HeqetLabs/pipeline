@@ -19,6 +19,7 @@ class Publisher(object):
     app.config.setdefault("REDIS_HOST", "127.0.0.1")
     app.config.setdefault("REDIS_PORT", 6379)
     app.config.setdefault("REDIS_HEALTH_CHECK_CHANNEL", "health-check-channel")
+    app.config.setdefault("REDIS_ID", "publisher")
 
   @property
   def conn(self):
